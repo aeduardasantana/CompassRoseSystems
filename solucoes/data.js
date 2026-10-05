@@ -138,5 +138,19 @@ window.CRS_SOLUTIONS = [
     use: "Organiza conteúdos de oração em uma experiência visual e acessível, com possibilidade de evolução e aplicação institucional.",
     access: "Apresentação, projetos institucionais, patrocínio e personalização quando aplicável.",
     cta: "Quero conhecer o Oração Visual"
+  },
+  {
+    slug: "bastidor",
+    name: "Bastidor — Gestão em Pauta",
+    eyebrow: "Curadoria e inteligência editorial",
+    categories: ["empresas","comunicacao","gestao"],
+    status: "Operacional em uso interno",
+    headline: "Uma central para transformar volume de notícias em pauta editorial organizada.",
+    summary: "Central editorial para radar diário, seleção de notícias, classificação de relevância e geração de briefing para produção de conteúdo.",
+    audience: "Equipes editoriais, comunicação, marketing, liderança de conteúdo e operações que trabalham com curadoria recorrente de notícias.",
+    problem: "Excesso de informação, dificuldade de priorizar notícias relevantes e retrabalho na passagem entre monitoramento, pauta e produção.",
+    use: "A solução reúne radar de notícias, seleção para pauta, classificação entre gravar agora, reservar, acompanhar ou não usar e geração de briefing em PDF.",
+    access: "Hoje é utilizada internamente no Gestão em Pauta. Pode ser apresentada como tecnologia própria e avaliada para adaptação a outras operações editoriais.",
+    cta: "Quero conhecer o Bastidor"
   }
 ];
