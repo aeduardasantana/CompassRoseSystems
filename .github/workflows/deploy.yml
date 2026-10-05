@@ -1,5 +1,7 @@
 name: Deploy GEB Tecnologia
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 jobs:
   deploy:
