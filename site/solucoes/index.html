@@ -2,10 +2,32 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Soluções | GEB Tecnologia</title><meta name="description" content="Conheça as soluções tecnológicas desenvolvidas e apresentadas pelo GEB Tecnologia e Compass Rose Systems."><link rel="stylesheet" href="styles.css"></head>
 <body><header class="wrap top"><a class="brand" href="../"><img src="../dist/assets/geb-tecnologia-logo.webp" alt="GEB Tecnologia"><small>desenvolvimento Compass Rose Systems</small></a><nav class="nav"><a href="../">Início</a><a href="./">Soluções</a><a href="https://wa.me/551121105473">Apresente sua ideia</a></nav></header>
 <main><section class="wrap hero"><div class="kicker">Soluções disponíveis e em desenvolvimento</div><h1>Tecnologia criada para resolver necessidades reais.</h1><p class="lead">Explore soluções para pessoas, empresas, educação, comunicação, inclusão e projetos de impacto. Cada projeto tem sua própria finalidade — e alguns também podem ser adaptados a novos contextos.</p>
+<div class="catalog-search"><label for="catalogSearch">Pesquisar no catálogo</label><input id="catalogSearch" type="search" placeholder="Busque por solução, público, problema ou contexto"></div>
 <div class="filters" id="filters"><button class="filter active" data-filter="all">Todas</button><button class="filter" data-filter="empresas">Empresas</button><button class="filter" data-filter="rh">RH e Pessoas</button><button class="filter" data-filter="educacao">Educação</button><button class="filter" data-filter="inclusao">Inclusão e acessibilidade</button><button class="filter" data-filter="comunicacao">Comunicação</button><button class="filter" data-filter="gestao">Gestão</button><button class="filter" data-filter="impacto">Impacto social</button></div></section>
 <section class="wrap grid" id="grid"></section>
 <section class="wrap cta"><div class="kicker" style="color:#d7b56d">Não encontrou exatamente o que precisa?</div><h2>Conte sua ideia. A parte técnica é com a gente.</h2><p>Você não precisa chegar sabendo qual tecnologia usar. Explique o problema, o processo ou a ideia que gostaria de fazer funcionar.</p><a class="button" href="https://wa.me/551121105473?text=Ol%C3%A1%21%20Quero%20apresentar%20uma%20ideia%20ao%20GEB%20Tecnologia.">Apresentar minha ideia</a></section></main>
 <footer class="wrap footer">GEB Tecnologia · Soluções desenvolvidas e organizadas com Compass Rose Systems.</footer>
 <script src="data.js"></script><script>
-const grid=document.getElementById('grid'); function draw(filter='all'){grid.innerHTML='';CRS_SOLUTIONS.filter(s=>filter==='all'||s.categories.includes(filter)).forEach(s=>{const el=document.createElement('article');el.className='card';el.innerHTML='<div class="eyebrow">'+s.eyebrow+'</div><span class="status">'+s.status+'</span><h3>'+s.name+'</h3><p>'+s.summary+'</p><a href="'+s.slug+'/">Conhecer solução →</a>';grid.appendChild(el)})} draw(); document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');draw(b.dataset.filter)});
+const grid=document.getElementById('grid');
+const search=document.getElementById('catalogSearch');
+let activeFilter='all';
+function searchable(s){return [s.name,s.eyebrow,s.summary,s.headline,s.audience,s.problem,s.use,(s.categories||[]).join(' ')].join(' ').toLowerCase()}
+function draw(){
+  const q=(search.value||'').trim().toLowerCase();
+  const items=CRS_SOLUTIONS.filter(s=>(activeFilter==='all'||s.categories.includes(activeFilter))&&(!q||searchable(s).includes(q)));
+  grid.innerHTML='';
+  if(!items.length){grid.innerHTML='<div class="catalog-empty"><strong>Nenhuma solução encontrada.</strong><span>Tente outro termo ou selecione “Todas”.</span></div>';return}
+  items.forEach(s=>{
+    const el=document.createElement('article');
+    el.className='card';
+    const href=s.siteUrl||s.slug+'/';
+    const label=s.siteUrl?'Acessar solução ↗':'Conhecer solução →';
+    const target=s.siteUrl?' target="_blank" rel="noopener"':'';
+    el.innerHTML='<div class="eyebrow">'+s.eyebrow+'</div><span class="status">'+s.status+'</span><h3>'+s.name+'</h3><p>'+s.summary+'</p><a href="'+href+'"'+target+'>'+label+'</a>';
+    grid.appendChild(el)
+  })
+}
+draw();
+search.addEventListener('input',draw);
+document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeFilter=b.dataset.filter;draw()});
 </script></body></html>
