@@ -10,11 +10,11 @@
       <table class="catalog-table">
         <thead>
           <tr>
-            <th>Solução</th>
-            <th>Área / contexto</th>
-            <th>Para quem</th>
-            <th>Status</th>
-            <th>Acesso</th>
+            <th><span>Solução</span><small>Produto e finalidade</small></th>
+            <th><span>Área</span><small>Contexto principal</small></th>
+            <th><span>Para quem</span><small>Público indicado</small></th>
+            <th><span>Status</span><small>Momento atual</small></th>
+            <th><span>Acesso</span><small>Próximo passo</small></th>
           </tr>
         </thead>
         <tbody id="grid"></tbody>
@@ -52,9 +52,9 @@ function draw(){
     const label=s.siteUrl?'Acessar ↗':'Detalhes →';
     const target=s.siteUrl?' target="_blank" rel="noopener"':'';
     row.innerHTML=
-      '<td data-label="Solução"><strong class="solution-name">'+s.name+'</strong><span class="solution-summary">'+s.summary+'</span></td>'+
-      '<td data-label="Área / contexto"><span class="category-label">'+s.eyebrow+'</span></td>'+
-      '<td data-label="Para quem">'+s.audience+'</td>'+
+      '<td data-label="Solução"><div class="solution-cell"><strong class="solution-name">'+s.name+'</strong><span class="solution-summary">'+s.summary+'</span></div></td>'+
+      '<td data-label="Área"><span class="category-label">'+s.eyebrow+'</span></td>'+
+      '<td data-label="Para quem"><span class="audience-copy">'+s.audience+'</span></td>'+
       '<td data-label="Status"><span class="status">'+s.status+'</span></td>'+
       '<td data-label="Acesso"><a class="table-link" href="'+href+'"'+target+'>'+label+'</a></td>';
     grid.appendChild(row);
