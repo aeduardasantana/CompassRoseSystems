@@ -103,6 +103,21 @@ window.CRS_SOLUTIONS = [
     cta: "Quero conhecer o Calendário em Libras"
   },
   {
+    slug: "curso-de-libras",
+    name: "Curso de Libras",
+    siteUrl: "https://cursodelibras.grupoeduardabispo.com.br/",
+    eyebrow: "Educação e inclusão",
+    categories: ["educacao","inclusao","impacto"],
+    status: "Disponível",
+    headline: "Uma plataforma digital de aprendizagem de Libras estruturada em unidades, materiais e prática.",
+    summary: "Ambiente digital do Curso de Libras que organiza a trilha de aprendizagem, biblioteca de materiais, conteúdos de apoio e acompanhamento de progresso.",
+    audience: "Estudantes de Libras, comunidades, projetos educacionais, agentes pastorais e instituições interessadas em formação e acessibilidade.",
+    problem: "Materiais de formação em Libras podem ficar dispersos entre apostilas, vídeos, atividades e referências, dificultando uma jornada de aprendizagem organizada.",
+    use: "A plataforma reúne unidades de estudo, biblioteca, materiais visuais, vídeos de apoio e recursos de acompanhamento em uma experiência digital responsiva.",
+    access: "Acesso direto pela plataforma do Curso de Libras. O GEB Tecnologia apresenta a solução tecnológica; a formação permanece vinculada ao ecossistema educacional e de Libras.",
+    cta: "Acessar o Curso de Libras"
+  },
+  {
     slug: "smaldone",
     name: "Marketplace de Intérpretes — Smaldone",
     eyebrow: "Inclusão e serviços",
