@@ -48,9 +48,9 @@ function draw(){
 
   items.forEach(s=>{
     const row=document.createElement('tr');
-    const href=s.siteUrl||s.slug+'/';
-    const label=s.siteUrl?'Acessar ↗':'Detalhes →';
-    const target=s.siteUrl?' target="_blank" rel="noopener"':'';
+    const href=s.slug+'/';
+    const label='Detalhes →';
+    const target='';
     row.innerHTML=
       '<td data-label="Solução"><div class="solution-cell"><strong class="solution-name">'+s.name+'</strong><span class="solution-summary">'+s.summary+'</span></div></td>'+
       '<td data-label="Área"><span class="category-label">'+s.eyebrow+'</span></td>'+
