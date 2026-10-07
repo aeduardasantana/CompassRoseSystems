@@ -30,6 +30,7 @@ window.CRS_SOLUTIONS = [
   {
     slug: "nexo",
     name: "NEXO",
+    siteUrl: "https://nexo.compassrosesystems.com.br",
     eyebrow: "Educação e acessibilidade",
     categories: ["educacao","inclusao","impacto"],
     status: "Disponível para apresentação",
@@ -44,6 +45,7 @@ window.CRS_SOLUTIONS = [
   {
     slug: "criativo",
     name: "CRIATIVO",
+    siteUrl: "https://criativo.compassrosesystems.com.br",
     eyebrow: "Comunicação",
     categories: ["empresas","comunicacao"],
     status: "Disponível para apresentação",
@@ -57,7 +59,8 @@ window.CRS_SOLUTIONS = [
   },
   {
     slug: "whatsapp-compass-rose",
-    name: "WhatsApp Compass Rose",
+    name: "Compass WhatsApp",
+    siteUrl: "https://agenzap.compassrosesystems.com.br",
     eyebrow: "Comunicação e automação",
     categories: ["empresas","comunicacao","gestao"],
     status: "Em validação",
@@ -68,6 +71,21 @@ window.CRS_SOLUTIONS = [
     use: "A versão atual organiza importação de contatos, seleção, variações de mensagens, fila local e relatórios. O mecanismo de envio ainda depende da integração adequada.",
     access: "Apresentação da solução e avaliação de implantação conforme o cenário de comunicação do negócio.",
     cta: "Quero conhecer o WhatsApp Compass Rose"
+  },
+  {
+    slug: "presente-virtual",
+    name: "Presente Virtual",
+    siteUrl: "https://presentevirtual.compassrosesystems.com.br",
+    eyebrow: "Comunicação e experiências digitais",
+    categories: ["comunicacao","impacto"],
+    status: "Disponível",
+    headline: "Transforme uma mensagem, convite ou ocasião em uma experiência digital para compartilhar.",
+    summary: "Solução para criar presentes e convites virtuais personalizados diretamente no navegador, sem cadastro e sem armazenamento do conteúdo.",
+    audience: "Pessoas, famílias, pequenos negócios, eventos e projetos que desejam compartilhar mensagens ou convites de forma interativa.",
+    problem: "Mensagens e convites digitais muitas vezes ficam limitados a textos ou imagens estáticas, sem uma experiência própria de apresentação.",
+    use: "A pessoa escolhe o tipo de experiência, personaliza informações e gera uma apresentação digital compartilhável, mantendo os dados no próprio navegador.",
+    access: "Acesso direto pela aplicação web.",
+    cta: "Acessar o Presente Virtual"
   },
   {
     slug: "calendario-em-libras",
@@ -128,6 +146,7 @@ window.CRS_SOLUTIONS = [
   {
     slug: "oracao-visual",
     name: "Oração Visual",
+    siteUrl: "https://oracaovisual.compassrosesystems.com.br",
     eyebrow: "Acessibilidade e impacto social",
     categories: ["inclusao","impacto"],
     status: "Disponível para apresentação",
@@ -142,6 +161,7 @@ window.CRS_SOLUTIONS = [
   {
     slug: "bastidor",
     name: "Bastidor — Gestão em Pauta",
+    siteUrl: "https://bastidor.compassrosesystems.com.br",
     eyebrow: "Curadoria e inteligência editorial",
     categories: ["empresas","comunicacao","gestao"],
     status: "Operacional em uso interno",
