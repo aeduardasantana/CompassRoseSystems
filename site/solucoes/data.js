@@ -2,6 +2,7 @@ window.CRS_SOLUTIONS = [
   {
     slug: "feedback-compass-rose",
     name: "Feedback Compass Rose",
+    siteUrl: "https://feedback.compassrosesystems.com.br/",
     eyebrow: "RH e Pessoas",
     categories: ["empresas","rh"],
     status: "Em validação",
@@ -132,6 +133,7 @@ window.CRS_SOLUTIONS = [
   {
     slug: "caminhos-da-palavra",
     name: "Caminhos da Palavra",
+    siteUrl: "http://caminhosdapalavra.compassrosesystems.com.br/",
     eyebrow: "Experiência católica acessível",
     categories: ["educacao","inclusao","impacto"],
     status: "Disponível em evolução",
