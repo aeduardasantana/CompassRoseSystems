@@ -86,3 +86,5 @@
   .table-link{justify-self:start}
   .category-label{width:max-content}
 }
+
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.button-secondary{background:transparent;color:#fff;border:1px solid #6a7471}.button-secondary:hover{background:#fff;color:#18211f}
