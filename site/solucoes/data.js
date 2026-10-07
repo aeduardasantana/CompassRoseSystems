@@ -59,7 +59,7 @@ window.CRS_SOLUTIONS = [
   },
   {
     slug: "whatsapp-compass-rose",
-    name: "Compass WhatsApp",
+    name: "AGENZAP",
     siteUrl: "https://agenzap.compassrosesystems.com.br",
     eyebrow: "Comunicação e automação",
     categories: ["empresas","comunicacao","gestao"],
@@ -70,7 +70,7 @@ window.CRS_SOLUTIONS = [
     problem: "Listas dispersas, mensagens repetitivas, pouca rastreabilidade e dificuldade para organizar campanhas.",
     use: "A versão atual organiza importação de contatos, seleção, variações de mensagens, fila local e relatórios. O mecanismo de envio ainda depende da integração adequada.",
     access: "Apresentação da solução e avaliação de implantação conforme o cenário de comunicação do negócio.",
-    cta: "Quero conhecer o WhatsApp Compass Rose"
+    cta: "Quero conhecer o AGENZAP"
   },
   {
     slug: "presente-virtual",
