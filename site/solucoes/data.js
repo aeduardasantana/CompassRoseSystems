@@ -1,5 +1,20 @@
 window.CRS_SOLUTIONS = [
   {
+    slug: "datilologia",
+    name: "Datilologia",
+    siteUrl: "https://datilologia.compassrosesystems.com.br/",
+    eyebrow: "Educação e acessibilidade",
+    categories: ["educacao","inclusao","impacto"],
+    status: "Disponível",
+    headline: "Digite, visualize e pratique o alfabeto manual da Libras.",
+    summary: "Ferramenta visual gratuita para consultar e praticar a representação datilológica de letras, números, nomes e palavras; com referência linguística e cultural na comunidade surda de Goiânia/Goiás.",
+    audience: "Estudantes de Libras, educadores, intérpretes, famílias, pessoas surdas e ouvintes interessadas no alfabeto manual.",
+    problem: "A consulta e demonstração de letras, números e soletração manual podem exigir recursos visuais práticos, especialmente em atividades educacionais e apresentações.",
+    use: "O visitante digita palavras, nomes ou frases curtas e visualiza a sequência pelo alfabeto manual, além de consultar letras e números. A ferramenta normaliza acentos para soletração; não traduz frases para a estrutura linguística da Libras.",
+    access: "Acesso direto e gratuito no navegador, sem cadastro. Também pode apoiar aulas e apresentações. A referência regional não constitui validação ou endosso formal da comunidade surda.",
+    cta: "Acessar a Datilologia"
+  },
+  {
     slug: "refletindo",
     name: "Refletindo",
     siteUrl: "https://refletindo.compassrosesystems.com.br/",
