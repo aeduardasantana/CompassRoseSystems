@@ -61,12 +61,48 @@ function draw(){
   });
 }
 
-draw();
-search.addEventListener('input',draw);
-document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
+const filterButtons=[...document.querySelectorAll('.filter')];
+const validFilters=new Set(filterButtons.map(b=>b.dataset.filter));
+
+function readUrlState(){
+  const hash=decodeURIComponent(window.location.hash.slice(1)).toLowerCase();
+  activeFilter=validFilters.has(hash)?hash:'all';
+  const params=new URLSearchParams(window.location.search);
+  search.value=params.get('q')||'';
+  filterButtons.forEach(b=>{
+    const selected=b.dataset.filter===activeFilter;
+    b.classList.toggle('active',selected);
+    b.setAttribute('aria-pressed',String(selected));
+  });
+  draw();
+}
+
+function writeUrlState(push=false){
+  const url=new URL(window.location.href);
+  const term=search.value.trim();
+  if(term)url.searchParams.set('q',term);
+  else url.searchParams.delete('q');
+  url.hash=activeFilter==='all'?'':activeFilter;
+  window.history[push?'pushState':'replaceState'](null,'',url.pathname+url.search+url.hash);
+}
+
+filterButtons.forEach(b=>b.addEventListener('click',()=>{
+  if(activeFilter===b.dataset.filter)return;
   activeFilter=b.dataset.filter;
+  filterButtons.forEach(x=>{
+    const selected=x===b;
+    x.classList.toggle('active',selected);
+    x.setAttribute('aria-pressed',String(selected));
+  });
+  writeUrlState(true);
+  draw();
+}));
+
+search.addEventListener('input',()=>{
+  writeUrlState();
   draw();
 });
+window.addEventListener('hashchange',readUrlState);
+window.addEventListener('popstate',readUrlState);
+readUrlState();
 </script></body></html>
