@@ -1,5 +1,20 @@
 window.CRS_SOLUTIONS = [
   {
+    slug: "alfabeto-libras",
+    name: "Alfabeto Libras",
+    siteUrl: "https://alfabetolibras.compassrosesystems.com.br/",
+    eyebrow: "Educação e acessibilidade",
+    categories: ["educacao","inclusao","impacto"],
+    status: "Disponível",
+    headline: "Aprenda o alfabeto manual da Libras, uma letra de cada vez.",
+    summary: "Recurso educacional com vídeos das 26 letras, navegação guiada e prática visual de datilologia para nomes e palavras.",
+    audience: "Pessoas iniciando o estudo de Libras, educadores, famílias, estudantes e instituições.",
+    problem: "A aprendizagem inicial do alfabeto manual exige observação da configuração de mão e dos movimentos, além de oportunidades simples de repetição.",
+    use: "Selecione letras de A a Z para observar vídeos, avance ou retorne entre letras e digite nomes ou palavras para praticar uma sequência em fonte visual de Libras.",
+    access: "Uso gratuito pelo navegador em alfabetolibras.compassrosesystems.com.br.",
+    cta: "Quero conhecer o Alfabeto Libras"
+  },
+  {
     slug: "datilologia",
     name: "Datilologia",
     siteUrl: "https://datilologia.compassrosesystems.com.br/",
