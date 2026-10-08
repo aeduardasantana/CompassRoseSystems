@@ -1,5 +1,20 @@
 window.CRS_SOLUTIONS = [
   {
+    slug: "libras-catolica",
+    name: "Libras Católica",
+    siteUrl: "https://librascatolica.compassrosesystems.com.br/",
+    eyebrow: "Inclusão e acessibilidade",
+    categories: ["educacao","inclusao","impacto"],
+    status: "Disponível",
+    headline: "Consulte sinais e expressões do contexto católico em uma experiência simples e acessível.",
+    summary: "Acervo digital de sinais católicos em Libras, com vídeos e pesquisa facilitada. A referência linguística e cultural é a comunidade surda de Goiânia/Goiás.",
+    audience: "Pessoas surdas, intérpretes de Libras, catequistas, agentes pastorais e interessados na comunicação acessível no contexto católico.",
+    problem: "A consulta de sinais e expressões usados no contexto católico pode exigir localizar vídeos dispersos ou conhecer previamente a grafia exata de cada termo.",
+    use: "O visitante pesquisa palavras inteiras ou parciais, com ou sem acentos, escolhe termos sugeridos e acessa a mídia correspondente. O acervo preserva como referência a comunidade surda de Goiânia/Goiás, reconhecendo variações regionais.",
+    access: "Acesso direto ao dicionário digital, sem necessidade de cadastro.",
+    cta: "Acessar a Libras Católica"
+  },
+  {
     slug: "feedback-compass-rose",
     name: "Feedback Compass Rose",
     siteUrl: "https://feedback.compassrosesystems.com.br/",
