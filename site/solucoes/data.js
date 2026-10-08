@@ -214,11 +214,11 @@ window.CRS_SOLUTIONS = [
     categories: ["empresas","educacao","comunicacao","gestao"],
     status: "Disponível",
     headline: "Organize ideias, conecte assuntos e apresente conteúdos por caminhos visuais.",
-    summary: "Ferramenta web de mapas mentais interativos, com tópicos hierárquicos, navegação por zoom, conteúdo complementar e modo de apresentação.",
+    summary: "Ferramenta web de mapas mentais interativos, com edição direta por duplo clique, biblioteca de vários mapas salvos no navegador, identificação com nome ou logo, recursos multimídia e exportação TXT, HTML e JSON.",
     audience: "Educadores, estudantes, equipes, lideranças, profissionais de treinamento e pessoas que precisam organizar ou apresentar informações complexas.",
     problem: "Estruturas e relações entre assuntos podem se perder em listas extensas ou apresentações estritamente lineares.",
-    use: "Crie a estrutura de tópicos a partir de texto, adicione e edite nós, expanda ou recolha ramificações, movimente o mapa, associe descrição, imagem e vídeo a tópicos e navegue pelo modo apresentação. Há opção de imprimir ou gerar PDF pelo navegador.",
-    access: "Acesso direto e sem cadastro. Na versão atual, o mapa não é armazenado pela aplicação: salve a impressão ou o PDF antes de fechar a página.",
+    use: "Crie mapas a partir de tópicos, edite títulos diretamente no quadro com duplo clique e use o painel para inserir descrições, vídeos e imagens. Gerencie vários mapas na biblioteca local, personalize a identificação, apresente em tela cheia e exporte em TXT, HTML, JSON ou PDF pela impressão do navegador. Também é possível importar TXT, HTML compatível e JSON.",
+    access: "Acesso direto, sem cadastro. Os mapas ficam salvos localmente no navegador utilizado; não há sincronização entre dispositivos. Exporte JSON ou HTML para fazer backup e reutilizar em outro navegador.",
     cta: "Acessar o Mapa Mental"
   },
   {
