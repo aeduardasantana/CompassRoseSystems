@@ -92,3 +92,46 @@ h2{font-size:clamp(2rem,4.2vw,4rem);line-height:1.05;letter-spacing:-.06em}
   .table-link{justify-self:start}
   .footer{flex-direction:column;gap:8px}
 }
+
+/* Destaque padrao para o status nas paginas individuais das solucoes. */
+.solution-hero > .status{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:10px 14px;
+  margin:4px 0 0;
+  background:#181818;
+  border:1px solid #181818;
+  color:#fff;
+  font:500 .7rem 'DM Mono',monospace;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  max-width:100%;
+  white-space:normal;
+}
+.solution-hero > .status::before{
+  content:"";
+  display:block;
+  width:8px;
+  height:8px;
+  flex:0 0 8px;
+  border-radius:50%;
+  background:#d7b56d;
+}
+.solution-grid > .facts > .fact:last-child{
+  background:#181818;
+  color:#fff;
+  border:1px solid #181818;
+  padding:18px 20px;
+  margin-top:14px;
+}
+.solution-grid > .facts > .fact:last-child strong{
+  color:#d7b56d;
+  font-weight:700;
+  letter-spacing:.11em;
+}
+.solution-grid > .facts > .fact:last-child span{
+  color:#fff;
+  font-weight:700;
+  line-height:1.6;
+}
