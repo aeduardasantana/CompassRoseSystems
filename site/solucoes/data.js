@@ -1,5 +1,20 @@
 window.CRS_SOLUTIONS = [
   {
+    slug: "refletindo",
+    name: "Refletindo",
+    siteUrl: "https://refletindo.compassrosesystems.com.br/",
+    eyebrow: "Autoconhecimento e desenvolvimento humano",
+    categories: ["rh","educacao","impacto"],
+    status: "Disponível",
+    headline: "Uma pergunta pode abrir novos caminhos.",
+    summary: "Experiência digital de reflexão com perguntas abertas sobre emoções, relações, escolhas, valores e desenvolvimento pessoal.",
+    audience: "Pessoas interessadas em autoconhecimento, profissionais de desenvolvimento humano, facilitadores e educadores.",
+    problem: "Iniciar uma conversa significativa ou explorar vivências pessoais nem sempre é simples; perguntas cuidadosamente formuladas ajudam a abrir novas perspectivas.",
+    use: "A pessoa escolhe um tema, percorre perguntas no próprio ritmo, revisita as que considera significativas e acompanha as reflexões exploradas durante a sessão. Não se trata de teste psicológico ou instrumento diagnóstico.",
+    access: "Acesso direto e gratuito ao ambiente digital, sem cadastro.",
+    cta: "Conhecer a experiência Refletindo"
+  },
+  {
     slug: "libras-catolica",
     name: "Libras Católica",
     siteUrl: "https://librascatolica.compassrosesystems.com.br/",
