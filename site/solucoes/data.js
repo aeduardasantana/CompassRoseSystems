@@ -1,5 +1,20 @@
 window.CRS_SOLUTIONS = [
   {
+    slug: "dicionario-libras",
+    name: "Dicionário Libras",
+    siteUrl: "https://dicionariolibras.compassrosesystems.com.br/",
+    eyebrow: "Inclusão e acessibilidade",
+    categories: ["educacao","inclusao","impacto"],
+    status: "Em desenvolvimento",
+    headline: "Consulta de vocabulário em Libras com responsabilidade linguística.",
+    summary: "Produto digital em desenvolvimento para organizar a consulta de termos em Libras. As mídias do vocabulário foram retiradas da exibição pública enquanto sua origem e adequação linguística são revisadas.",
+    audience: "Pessoas surdas e ouvintes, estudantes de Libras, educadores, intérpretes e instituições interessadas em consulta e aprendizagem.",
+    problem: "A consulta de vocabulário em Libras exige informações confiáveis sobre sentido, contexto, variantes e procedência das representações visuais.",
+    use: "O ambiente permite buscar e explorar entradas lexicais e praticar dactilologia. As entradas do vocabulário não exibem sinais enquanto não houver revisão. Não é tradutor automático.",
+    access: "Prévia pública para acompanhamento do desenvolvimento, sem recomendação de uso como fonte validada de sinais. Referência linguística e cultural regional: comunidade surda de Goiânia/Goiás, sem alegação de endosso ou validação formal.",
+    cta: "Acompanhar o Dicionário Libras"
+  },
+  {
     slug: "alfabeto-libras",
     name: "Alfabeto Libras",
     siteUrl: "https://alfabetolibras.compassrosesystems.com.br/",
